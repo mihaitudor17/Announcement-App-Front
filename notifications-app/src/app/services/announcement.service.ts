@@ -11,7 +11,7 @@ export class AnnouncementService {
 
   //baseUrl:string='https://newsapi20221108120432.azurewebsites.net';
 
-  baseUrl: string = "44.203.125.234:80"
+  baseUrl: string = "https://localhost:7017"
 
   constructor(private httpClient: HttpClient) { }
 
