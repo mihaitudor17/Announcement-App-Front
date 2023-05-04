@@ -1,0 +1,19 @@
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.app-container {
+  display: inline-block;
+  margin: 10px;;
+  gap:20px;
+  .announcements {
+    width: 90%;
+  }
+}
+
+.form{
+  display: inline-block;
+  flex-direction: columns;
+}

@@ -1,0 +1,27 @@
+<div class = "container">
+  <form class="form-class" >
+      <mat-form-field c appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Title" [(ngModel)]="ann.title" name="title" required>
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Author</mat-label>
+        <input matInput placeholder="Author"  [(ngModel)]="ann.author" name="author" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+          <mat-label>Message</mat-label>
+          <input matInput placeholder="Message"  [(ngModel)]="ann.message" name="message" required>
+        </mat-form-field>
+  
+        <mat-select [(ngModel)]="ann.category" appearance="fill" placeholder="Category" class="select" name="category"> 
+          <mat-option *ngFor="let category of categories" [value]="category">
+            {{category}}
+          </mat-option>
+        </mat-select>
+  
+        <button mat-raised-button (click)="addAnnouncement()" routerLink="" >Add Announcement</button>
+        <button mat-raised-button routerLink="" class="button">Cancel</button>
+    </form>
+  </div>

@@ -1,0 +1,15 @@
+<app-categories class="buttons" (selectedCategoryEmitter)="receiveCategory($event)"></app-categories>
+<p>{{notification}}</p>
+<div *ngFor="let announcement of announcements" class="app-container" >
+  <div *ngIf="selectedCategory=='All';else applyFilter">
+    <app-announcement 
+      (changedDetected)="DetectChange($event)"
+      [announc]="announcement">
+    </app-announcement>
+  </div>
+  <ng-template #applyFilter>
+    <div *ngIf="announcement.category==selectedCategory">
+      <app-announcement [announc]="announcement"></app-announcement>
+    </div>
+  </ng-template>
+</div>

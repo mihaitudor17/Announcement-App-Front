@@ -1,0 +1,7 @@
+<div  class = "container">
+  <div *ngFor="let category of categories">
+    <button mat-raised-button (click)="click(category)" class = "button">{{category}}</button>
+  </div>
+  <button (click)="click('All')" mat-raised-button class = "button" >All</button>
+  <button mat-raised-button [routerLink]="'/add'"class = "button">Add</button>
+</div>

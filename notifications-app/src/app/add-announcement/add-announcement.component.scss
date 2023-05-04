@@ -1,0 +1,44 @@
+.content{
+
+    align-items: center;
+
+    align-content: center;
+
+    justify-content: center;
+
+    justify-items:  center;
+
+.add-note-form {
+
+    display: flex;
+
+    font-size: 18px;
+
+    max-width: 200px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+   }
+
+}
+
+.form-class{
+    display: flex;
+    flex-direction:column;
+}
+
+.select{
+    margin: 20px;
+}
+
+.button{
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
